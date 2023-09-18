@@ -6,3 +6,9 @@ data_ingestion:
   source_URL: https://github.com/nlsrikanth7/Cat_and_Dog/raw/main/winequality-red.csv.zip
   local_data_file: artifacts/data_ingestion/data.zip
   unzip_dir: artifacts/data_ingestion
+
+
+data_validation: 
+  root_dir: artifacts/data_validation # This will create another folder called data_validation under artifacts folders
+  unzip_data_dir: artifacts/data_ingestion/winequality-red.csv
+  STATUS_FILE: artifacts/data_validation/status.txt #create status.txt file under data_validation folder. 
