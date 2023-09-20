@@ -11,7 +11,7 @@ class DataTransformation:
     def __init__(self, config: DataTransformationConfig):
         self.config = config
 
-    def train_test_spliting(self) -> bool:   # We are looking for a boolean type output like True or False
+    def train_test_spliting(self):   # We are looking for a boolean type output like True or False
         data = pd.read_csv(self.config.data_path)
 
         # Split the data into training and test sets (0.75, 0.25) split. 
