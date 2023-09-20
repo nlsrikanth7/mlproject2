@@ -12,3 +12,7 @@ data_validation:
   root_dir: artifacts/data_validation # This will create another folder called data_validation under artifacts folders
   unzip_data_dir: artifacts/data_ingestion/winequality-red.csv
   STATUS_FILE: artifacts/data_validation/status.txt #create status.txt file under data_validation folder. 
+
+data_transformation:
+  root_dir: artifacts/data_transformation # this will create another folder call data_transformation under artifacts folder
+  data_path: artifacts/data_ingestion/winequality-red.csv
